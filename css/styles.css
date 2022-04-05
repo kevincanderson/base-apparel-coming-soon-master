@@ -10,7 +10,6 @@ body {
 	background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
 	min-height: 100vh;
 	margin: 0 auto;
-	max-width: 1440px;
 }
 .container {
 	display: grid;
