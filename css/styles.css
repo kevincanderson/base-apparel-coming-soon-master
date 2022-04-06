@@ -161,6 +161,7 @@ footer {
 		margin-left: 10.3125rem;
 		margin-right: 10.3125rem;
 		margin-top: 3.875rem;
+		max-width: 450px;
 	}
 
 	p {
