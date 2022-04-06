@@ -13,7 +13,7 @@ body {
 }
 .container {
 	display: grid;
-	height: 100vh;
+	height: 100%;
 }
 .desktop {
 	display: none;
@@ -26,17 +26,19 @@ body {
 }
 
 header {
-	margin-top: 2rem;
-	margin-left: 2rem;
 }
 
 .logo {
 	width: 100px;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 .content {
 	text-align: center;
-	margin: 2rem 2rem;
+	margin: 2rem auto;
+	max-width: 325px;
 }
 
 h1 {
@@ -117,7 +119,10 @@ footer {
 	display: none;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 769px) {
+	body {
+		overflow-x: clip;
+	}
 	.container {
 		grid-template-columns: auto 42%;
 		grid-template-rows: 100px auto;
@@ -129,7 +134,7 @@ footer {
 		background-repeat: no-repeat;
 	}
 
-	header {
+	.logo {
 		margin-left: 10.3125rem;
 		margin-top: 4.625rem;
 		margin-right: 10.3125rem;
@@ -192,5 +197,9 @@ footer {
 		justify-items: center;
 		margin-top: 1rem;
 		margin-right: 1rem;
+	}
+
+	.content {
+		max-width: inherit;
 	}
 }
